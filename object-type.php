@@ -20,7 +20,7 @@ class Produk {
 
  class CetakInfoProduk { 
  	public function cetak( Produk $produk ){
- 		$str = "{$produk->judul} | {$produk->getLabel()}, Shonen Jump (Rp.{$produk->harga})";
+ 		$str = "{$produk->judul} | {$produk->getLabel()}, Shonen Jump (Rp. {$produk->harga})";
  		return $str;
  	}
 }
